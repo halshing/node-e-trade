@@ -86,7 +86,7 @@ export class ETrade {
           "User-Agent": `node-e-trade/v${VERSION} nodejs/${process.version}`,
         },
         proxy: this.settings.proxy,
-        withCredentials: false,
+        withCredentials: true,
       },
       requestOptions || {}
     );
